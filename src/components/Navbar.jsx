@@ -17,13 +17,13 @@ function Navbar(){
     setOpenLogin((prev) => !prev)
   }
   return(
-    <div className="nav">
+    <div className="nav ">
       <header className="mb-20 flex items-center justify-between bg-white z-[1000] shadow-[5px_4px_9px_rgba(0,0,0,0.2)] bg-gradient-to-r from-blue-500 via-blue-300 to-white fixed top-0 w-full">
         <div className="flex">
           <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-soccer-logo_23-2149362229.jpg?t=st=1734202288~exp=1734205888~hmac=82dfde33464c448865ddfdb6d9c0db211e52afc385739bf978b34006fe8ba933&w=740" alt="logo" className="h-[3.4rem]"/>
-          <span className="text-black text-[27px] font-serif font-bold ml-4">Eger Odds</span>
+          <span className="text-black font-serif font-bold ml-4 text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">Odds Hub</span>
         </div>
-        <Nav className="navigation">
+        <Nav className="navigation text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
@@ -61,9 +61,9 @@ function Navbar(){
         size={""}
         className="rounded-[10px]"
       >
-        <div className="rounded-t-[5px] text-center bg-gradient-to-r from-brightest to-white flex gap-[2.5rem]">
+        <div className="rounded-t-[5px] text-center bg-gradient-to-r from-white via-blue-500 to-blue-600 flex gap-[4.5rem]">
           <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-soccer-logo_23-2149362229.jpg?t=st=1734202288~exp=1734205888~hmac=82dfde33464c448865ddfdb6d9c0db211e52afc385739bf978b34006fe8ba933&w=740" alt="logo" className="h-[3.2rem] rounded-[5px]" />
-          <h1 className="text-black">Eger Odds</h1>
+          <h1 className="text-black text-center">Odds Hub</h1>
         </div>
         <Login setOpenLogin={setOpenLogin} />
       </Modal>

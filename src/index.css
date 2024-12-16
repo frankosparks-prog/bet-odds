@@ -70,3 +70,23 @@ code {
   background: var(--blue);
   color: white;
 }
+.log {
+  border-radius: 15px;
+  color: black;
+  background-color: aliceblue;
+  height: 2rem;
+  width: 17.7rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+  border: none;
+}
+.log:hover {
+  transition: 2s ease;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: rgb(216, 214, 209);
+}
