@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 function Home() {
   const date = new Date();
@@ -199,6 +200,7 @@ function Home() {
       </table>
 
       </div>
+      <Footer />
     </div>
   );
 }

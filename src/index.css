@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 
 :root {
   --bright-blue: #5ca7ee;
@@ -63,10 +65,9 @@ code {
   font-size: 1.1em;
   color: var(--blue);
   font-weight: 500;
-  margin-left: 40px;
   transition: 1s;
 }
-.navigation .btnlogin:hover {
+.btnlogin:hover {
   background: var(--blue);
   color: white;
 }

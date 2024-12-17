@@ -21,7 +21,7 @@ function Navbar(){
       <header className="mb-20 flex items-center justify-between bg-white z-[1000] shadow-[5px_4px_9px_rgba(0,0,0,0.2)] bg-gradient-to-r from-blue-500 via-blue-300 to-white fixed top-0 w-full">
         <div className="flex">
           <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-soccer-logo_23-2149362229.jpg?t=st=1734202288~exp=1734205888~hmac=82dfde33464c448865ddfdb6d9c0db211e52afc385739bf978b34006fe8ba933&w=740" alt="logo" className="h-[3.4rem]"/>
-          <span className="text-black font-serif font-bold ml-4 text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">Odds Hub</span>
+          <span className="text-black font-serif  font-bold ml-4 text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">Odds Hub</span>
         </div>
         <Nav className="navigation text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">
           <Nav.Link as={Link} to="/">
@@ -38,7 +38,7 @@ function Navbar(){
           </Nav.Link>
           <button
           type="button"
-          className="btnlogin"
+          className="btnlogin ml-[40px]"
           onClick={() => {handleLogin()}}
           >
             VIP Login
