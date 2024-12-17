@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <div className="footer text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">
-      <div className="mt-[1px] mt-8 h-[12rem] w-auto flex items-center justify-center font-serif font-bold gap-[10.5rem] bg-[var(--text)] p-4">
+      <div className="mt-[1px] mt-10 h-[12rem] w-auto flex items-center justify-center font-serif font-bold gap-[10.5rem] bg-[var(--text)] p-4">
         <a href="#" class="no-underline group">
           <img
             src="\images\facebook.avif"
