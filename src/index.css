@@ -91,3 +91,18 @@ code {
 input::placeholder{
   color: rgb(216, 214, 209);
 }
+
+.glitter-effect {
+  animation: glitter 4s ease-in-out forwards;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes glitter {
+  0%, 100% {
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.3), transparent 70%);
+  }
+  50% {
+    background: radial-gradient(circle, rgba(255, 215, 0.6), transparent 50%);
+  }
+}

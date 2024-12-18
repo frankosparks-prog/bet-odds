@@ -6,7 +6,7 @@ import Register from "./Register";
 
 function Footer() {
   const navigate = useNavigate();
-  const [RegisterObj, setRegisterObj] = useState({});
+  const [setRegisterObj] = useState({});
   const [openRegister, setOpenRegister] = useState(false);
   const handleRegister = (Register) => {
     if (Register) {
@@ -16,9 +16,9 @@ function Footer() {
   };
 
   return (
-    <div className="footer text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal">
-      <div className="mt-[1px] mt-10 h-[12rem] w-auto flex items-center justify-center font-serif font-bold gap-[10.5rem] bg-[var(--text)] p-4">
-        <a href="#" class="no-underline group">
+    <div className="footer text-lg sm:text-base md:text-sm lg:text-lg leading-relaxed sm:leading-normal mt-4">
+      <div className="mt-[1px] h-[12rem] w-auto flex items-center justify-center font-serif font-bold gap-[10.5rem] bg-[var(--text)] p-4">
+        <a href="#" className="no-underline group">
           <img
             src="\images\facebook.avif"
             alt=""
@@ -26,7 +26,7 @@ function Footer() {
           />
           <p className="font-sans text-gray-300 font-dancing">facebook</p>
         </a>
-        <a href="#" class="no-underline group">
+        <a href="#" className="no-underline group">
           <img
             src="\images\google.avif"
             alt=""
@@ -34,7 +34,7 @@ function Footer() {
           />
           <p className="font-sans text-gray-300 font-dancing">google</p>
         </a>
-        <a href="#" class="no-underline group">
+        <a href="#" className="no-underline group">
           <img
             src="\images\instagram2.avif"
             alt=""
@@ -42,7 +42,7 @@ function Footer() {
           />
           <p className="font-sans text-gray-300 font-dancing">instagram</p>
         </a>
-        <a href="#" class="no-underline group">
+        <a href="#" className="no-underline group">
           <img
             src="\images\tik.avif"
             alt=""
@@ -50,7 +50,7 @@ function Footer() {
           />
           <p className="font-sans text-gray-300 font-dancing">tiktok</p>
         </a>
-        <a href="#" class="no-underline group">
+        <a href="#" className="no-underline group">
           <img
             src="\images\twitter.avif"
             alt=""
@@ -58,7 +58,7 @@ function Footer() {
           />
           <p className="font-sans text-gray-300 font-dancing">twitter</p>
         </a>
-        <a href="#" class="no-underline group">
+        <a href="#" className="no-underline group">
           <img
             src="\images\youtube.avif"
             alt=""
@@ -202,7 +202,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className="text-orange-400 font-semibold text-[1.4rem] mt-4 font-dancing">
+        <p className="text-orange-400 font-semibold text-[1.4rem] mt-4 font-dancing text-center">
           For communication concerning{" "}
           <span className="text-green-500">Adverts</span> and{" "}
           <span className="text-green-500">Reporting Abuse </span>communicate to
