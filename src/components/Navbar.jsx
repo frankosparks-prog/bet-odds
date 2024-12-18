@@ -6,6 +6,7 @@ import Home from "./Home";
 import Footer from "./Footer";
 import About from "./About"
 import Login from "./Login";
+import ScrollToTop from "./scrollTop";
 
 function Navbar(){
   const[setLoginObj] = useState({});
@@ -18,6 +19,7 @@ function Navbar(){
   }
   return(
     <div className="nav ">
+      <ScrollToTop />
       <header className="mb-20 flex items-center justify-between bg-white z-[1000] shadow-[5px_4px_9px_rgba(0,0,0,0.2)] bg-gradient-to-r from-blue-500 via-blue-300 to-white fixed top-0 w-full">
         <div className="flex">
           <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-soccer-logo_23-2149362229.jpg?t=st=1734202288~exp=1734205888~hmac=82dfde33464c448865ddfdb6d9c0db211e52afc385739bf978b34006fe8ba933&w=740" alt="logo" className="h-[3.4rem]"/>
