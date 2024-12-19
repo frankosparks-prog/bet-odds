@@ -115,6 +115,7 @@ function Footer() {
               <span>Create Account</span>
               <span>Profile</span>
               <span>History</span>
+              <span onClick={() => navigate("/chat")} className="text-current hover:text-[var(--bright-blue)] hover:cursor-pointer">Comment</span>
             </div>
           </div>
 

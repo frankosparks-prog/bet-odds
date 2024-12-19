@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
+import { useNavigate } from "react-router";
 
 function About() {
+  const navigate = useNavigate();
   const [isGlittering, setIsGlittering] = useState(false);
 
   const handleGlitter = () => {
     setIsGlittering(true);
-    setTimeout(() => setIsGlittering(false), 4000); 
+    setTimeout(() => setIsGlittering(false), 4000);
   };
 
   return (
@@ -37,7 +39,7 @@ function About() {
       <p className="text-black-400 font-semibold text-[1.4rem] mt-2 font-dancing text-center pl-14 pr-14">
         Beyond just numbers, we foster a vibrant community where football fans
         and bettors can share insights, strategies, and engage in meaningful
-        discussions. Whether you’re looking to track odds, analyze match trends,
+        discussions made possible at the comment section below. Whether you’re looking to track odds, analyze match trends,
         or simply stay updated on the latest football action, Odds Hub is here
         to enhance your experience. Join us today and make every match a winning
         moment 🥳! However, this is not a betting site! Moreover, to get more
@@ -54,6 +56,15 @@ function About() {
           Welcome 🎉
         </button>
       </center>
+
+      <div class="relative">
+        <button 
+        onClick={() => navigate("/chat")}
+        className="absolute bottom-0 right-16 w-[130px] h-[50px] bg-green-500 border-2 border-green-900 outline-none rounded-md cursor-pointer text-[1.1rem] text-black-500 font-medium transition-all duration-1000 items-center justify-center flex">
+          <span>Comment Chatbox</span>
+          <span>⏩</span>
+        </button>
+      </div>
 
       <Footer />
     </div>

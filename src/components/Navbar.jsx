@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import About from "./About"
 import Login from "./Login";
 import ScrollToTop from "./scrollTop";
+import Chat from "./Chat";
 
 function Navbar(){
   const[setLoginObj] = useState({});
@@ -35,9 +36,13 @@ function Navbar(){
           <Nav.Link as={Link} to="/about">
             About
           </Nav.Link>
+          {/* <Nav.Link as={Link} to="/chat">
+              Chatbox
+            </Nav.Link> */}
           <Nav.Link as={Link} to="contact">
             Contact Us
           </Nav.Link>
+          
           <button
           type="button"
           className="btnlogin ml-[40px]"
@@ -53,6 +58,7 @@ function Navbar(){
           <Route exact path="/" element={<Home />} />
           <Route path="/predictions" element={<Pred />} />
           <Route path="/about" element={<About />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/contact" element={<Footer />} />
         </Routes>
       </div>
